@@ -1,0 +1,501 @@
+<html>
+<head>
+    <title>Periodic table of the Elements</title>
+    <style>
+        h1 {
+            text-align: center;
+            padding-top: 30;
+        }
+        table {
+            text-align: center;
+        }
+        .atomic-number, .name,
+        .atomic-weight, .electrons {
+            font-size: 10;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .symbol {
+            font-size: 30;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p {
+            margin: 0;
+        }
+        .reactive-nonmetals {
+            background-color: #9BC87C;
+            border: 1px solid #9BC87C;
+            width: 85;
+            height: 100;
+        }
+        .post-transition-metals {
+            background-color: #B696C5;
+            border: 1px solid #B696C5;
+            width: 85;
+            height: 100;
+        }
+        .alkali-metals {
+            background-color: #D22430;
+            color: white;
+            border: 1px solid #D22430;
+            width: 85;
+            height: 100;
+        }
+        .alkaline-earth-metals {
+            background-color: #F5A720;
+            color: white;
+            border: 1px solid #F5A720;
+            width: 85;
+            height: 100;
+        }
+        .transition-metals {
+            background-color: #97BEE4;
+            border: 1px solid #97BEE4;
+            width: 85;
+            height: 100;
+        }
+        .lanthanides {
+            background-color: #1597D5;
+            border: 1px solid #1597D5;
+            width: 85;
+            height: 100;
+        }
+        .actinides {
+            background-color: #74C7AA;
+            border: 1px solid #74C7AA;
+            width: 85;
+            height: 100;
+        }
+        .metalloids {
+            background-color: #FBCF0F;
+            border: 1px solid #FBCF0F;
+            width: 85;
+            height: 100;
+        }
+        .noble-gases {
+            background-color: #F3B2CA;
+            border: 1px solid #F3B2CA;
+            width: 85;
+            height: 100;
+        }
+        .unknown {
+            background-color: #C3C3C4;
+            border: 1px solid #C3C3C4;
+            width: 85;
+            height: 100;
+        }
+        tr {
+            margin-bottom: 10;
+            color: #38393C;
+        }
+        .name-red {
+            color: red;
+        }
+        .name-blue {
+            color: #548BA8;
+        }
+        .name-grey {
+            color: #36373A;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size:50; color: #38393C; font-family:Arial, Helvetica, sans-serif">Periodic table of the Elements</h1>
+    <table align="center">
+        <tr>
+            <td class="reactive-nonmetals" >
+                <p class="atomic-number">1</p>
+                <p class="symbol">H</p>
+                <p class="name name-red">Hydrogen</p>
+                <p class="atomic-weight">1.008</p>
+                <p class="electrons">1</p>
+            </td>
+            <td></td>
+            <td rowspan="3" colspan="10">
+                <img src="../../AdobeStock_238869971.jpg" alt="" height="250" width="750">
+            </td>
+            <td colspan="5"></td>
+            <td class="noble-gases">
+                <p class="atomic-number">2</p>
+                <p class="symbol">He</p>
+                <p class="name name-red">Helium</p>
+                <p class="atomic-weight">4.0026</p>
+                <p class="electrons">2</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="alkali-metals">
+                <p class="atomic-number">3</p>
+                <p class="symbol">Li</p>
+                <p class="name name-grey">Lithium</p>
+                <p class="atomic-weight">6.94</p>
+                <p class="electrons">2-1</p>
+            </td>
+            <td class="alkaline-earth-metals">
+                <p class="atomic-number">4</p>
+                <p class="symbol">Be</p>
+                <p class="name name-grey">Beryllium</p>
+                <p class="atomic-weight">9.0122</p>
+                <p class="electrons">2-2</p>
+            </td>
+            <td class="metalloids">
+                <p class="atomic-number">5</p>
+                <p class="symbol">B</p>
+                <p class="name">Boron</p>
+                <p class="atomic-weight">10.81</p>
+                <p class="electrons">2-3</p>
+            </td>
+            <td class="reactive-nonmetals">
+                <p class="atomic-number">6</p>
+                <p class="symbol">C</p>
+                <p class="name">Carbon</p>
+                <p class="atomic-weight">12.011</p>
+                <p class="electrons">2-4</p>
+            </td>
+            <td class="reactive-nonmetals">
+                <p class="atomic-number">7</p>
+                <p class="symbol">N</p>
+                <p class="name name-red">Nitrogen</p>
+                <p class="atomic-weight">14.007</p>
+                <p class="electrons">2-5</p>
+            </td>
+            <td class="reactive-nonmetals">
+                <p class="atomic-number">8</p>
+                <p class="symbol">O</p>
+                <p class="name name-red">Oxygen</p>
+                <p class="atomic-weight">15.999</p>
+                <p class="electrons">2-6</p>
+            </td>
+            <td class="reactive-nonmetals">
+                <p class="atomic-number">9</p>
+                <p class="symbol">F</p>
+                <p class="name name-red">Fluorine</p>
+                <p class="atomic-weight">18.998</p>
+                <p class="electrons">2-7</p>
+            </td>
+            <td class="noble-gases">
+                <p class="atomic-number">10</p>
+                <p class="symbol">Ne</p>
+                <p class="name name-red">Neon</p>
+                <p class="atomic-weight">20.180</p>
+                <p class="electrons">2-8</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="alkali-metals">
+                <p class="atomic-number">11</p>
+                <p class="symbol">Na</p>
+                <p class="name name-grey">Sodium</p>
+                <p class="atomic-weight">22.98976928</p>
+                <p class="electrons">2-8-1</p>
+            </td>
+            <td class="alkaline-earth-metals">
+                <p class="atomic-number">12</p>
+                <p class="symbol">Mg</p>
+                <p class="name name-grey">Magnesium</p>
+                <p class="atomic-weight">24.305</p>
+                <p class="electrons">2-8-2</p>
+            </td>
+            <td class="post-transition-metals">
+                <p class="atomic-number">13</p>
+                <p class="symbol">Al</p>
+                <p class="name">Aluminum</p>
+                <p class="atomic-weight">26.982</p>
+                <p class="electrons">2-8-3</p>
+            </td>
+            <td class="metalloids">
+                <p class="atomic-number">14</p>
+                <p class="symbol">Si</p>
+                <p class="name">Silicon</p>
+                <p class="atomic-weight">28.085</p>
+                <p class="electrons">2-8-4</p>
+            </td>
+            <td class="reactive-nonmetals">
+                <p class="atomic-number">15</p>
+                <p class="symbol">P</p>
+                <p class="name">Phosphorus</p>
+                <p class="atomic-weight">30.974</p>
+                <p class="electrons">2-8-5</p>
+            </td>
+            <td class="reactive-nonmetals">
+                <p class="atomic-number">16</p>
+                <p class="symbol">S</p>
+                <p class="name">Sulfur</p>
+                <p class="atomic-weight">32.06</p>
+                <p class="electrons">2-8-6</p>
+            </td>
+            <td class="reactive-nonmetals">
+                <p class="atomic-number">17</p>
+                <p class="symbol">Cl</p>
+                <p class="name name-red">Chlorine</p>
+                <p class="atomic-weight">35.45</p>
+                <p class="electrons">2-8-7</p>
+            </td>
+            <td class="noble-gases">
+                <p class="atomic-number">18</p>
+                <p class="symbol">Ar</p>
+                <p class="name name-red">Argon</p>
+                <p class="atomic-weight">39.948</p>
+                <p class="electrons">2-8-8</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="alkali-metals">
+                <p class="atomic-number">19</p>
+                <p class="symbol">K</p>
+                <p class="name name-grey">Potassium</p>
+                <p class="atomic-weight">39.0983</p>
+                <p class="electrons">2-8-8-1</p>
+            </td>
+            <td class="alkaline-earth-metals">
+                <p class="atomic-number">20</p>
+                <p class="symbol">Ca</p>
+                <p class="name name-grey">Calcium</p>
+                <p class="atomic-weight">40.078</p>
+                <p class="electrons">2-8-8-2</p>
+            </td>
+            <td class="transition-metals">
+                <p class="atomic-number">21</p>
+                <p class="symbol">Sc</p>
+                <p class="name name-grey">Scandium</p>
+                <p class="atomic-weight">44.955908</p>
+                <p class="electrons">2-8-9-2</p>
+            </td>
+            <td class="transition-metals">
+                <p class="atomic-number">22</p>
+                <p class="symbol">Ti</p>
+                <p class="name name-grey">Titanium</p>
+                <p class="atomic-weight">47.867</p>
+                <p class="electrons">2-8-10-2</p>
+            </td>
+            <td class="transition-metals">
+                <p class="atomic-number">23</p>
+                <p class="symbol">V</p>
+                <p class="name name-grey">Vanadium</p>
+                <p class="atomic-weight">50.9415</p>
+                <p class="electrons">2-8-11-2</p>
+            </td>
+            <td class="transition-metals">
+                <p class="atomic-number">24</p>
+                <p class="symbol">Cr</p>
+                <p class="name name-grey">Chromium</p>
+                <p class="atomic-weight">51.9961</p>
+                <p class="electrons">2-8-13-1</p>
+            </td>
+            <td class="transition-metals">
+                <p class="atomic-number">25</p>
+                <p class="symbol">Mn</p>
+                <p class="name name-grey">Manganexe</p>
+                <p class="atomic-weight">54.938044</p>
+                <p class="electrons">2-8-13-2</p>
+            </td>
+            <td class="transition-metals">
+                <p class="atomic-number">26</p>
+                <p class="symbol">Fe</p>
+                <p class="name name-grey">Iron</p>
+                <p class="atomic-weight">55.845</p>
+                <p class="electrons">2-8-14-2</p>
+            </td>
+            <td class="transition-metals">
+                <p class="atomic-number">27</p>
+                <p class="symbol">Co</p>
+                <p class="name name-grey">Cobalt</p>
+                <p class="atomic-weight">58.933</p>
+                <p class="electrons">2-8-15-2</p>
+            </td>
+            <td class="transition-metals">
+                <p class="atomic-number">28</p>
+                <p class="symbol">Ni</p>
+                <p class="name name-grey">Nickel</p>
+                <p class="atomic-weight">58.693</p>
+                <p class="electrons">2-8-16-2</p>
+            </td>
+            <td class="transition-metals">
+                <p class="atomic-number">29</p>
+                <p class="symbol">Cu</p>
+                <p class="name name-grey">Copper</p>
+                <p class="atomic-weight">63.546</p>
+                <p class="electrons">2-8-18-1</p>
+            </td>
+            <td class="post-transition-metals">
+                <p class="atomic-number">30</p>
+                <p class="symbol">Zn</p>
+                <p class="name name-grey">Zinc</p>
+                <p class="atomic-weight">65.38</p>
+                <p class="electrons">2-8-18-2</p>
+            </td>
+            <td class="post-transition-metals">
+                <p class="atomic-number">31</p>
+                <p class="symbol">Ga</p>
+                <p class="name">Gallium</p>
+                <p class="atomic-weight">69.723</p>
+                <p class="electrons">2-8-18-3</p>
+            </td>
+            <td class="metalloids">
+                <p class="atomic-number">32</p>
+                <p class="symbol">Ge</p>
+                <p class="name">Geranium</p>
+                <p class="atomic-weight">72.630</p>
+                <p class="electrons">2-8-18-4</p>
+            </td>
+            <td class="metalloids">
+                <p class="atomic-number">33</p>
+                <p class="symbol">As</p>
+                <p class="name">Arsenic</p>
+                <p class="atomic-weight">74.922</p>
+                <p class="electrons">2-8-18-5</p>
+            </td>
+            <td class="reactive-nonmetals">
+                <p class="atomic-number">34</p>
+                <p class="symbol">Se</p>
+                <p class="name">Selenium</p>
+                <p class="atomic-weight">78.971</p>
+                <p class="electrons">2-8-18-6</p>
+            </td>
+            <td class="reactive-nonmetals">
+                <p class="atomic-number">35</p>
+                <p class="symbol">Br</p>
+                <p class="name name-blue">Bromine</p>
+                <p class="atomic-weight">79.904</p>
+                <p class="electrons">2-8-18-7</p>
+            </td>
+            <td class="noble-gases">
+                <p class="atomic-number">36</p>
+                <p class="symbol">Kr</p>
+                <p class="name name-red">Krypton</p>
+                <p class="atomic-weight">83.798</p>
+                <p class="electrons">2-8-18-8</p>
+            </td>
+        </tr>
+         <tr>
+            <td class="alkali-metals">
+                <p class="atomic-number">19</p>
+                <p class="symbol">K</p>
+                <p class="name name-grey">Potassium</p>
+                <p class="atomic-weight">39.0983</p>
+                <p class="electrons">2-8-8-1</p>
+            </td>
+            <td class="alkaline-earth-metals">
+                <p class="atomic-number">20</p>
+                <p class="symbol">Ca</p>
+                <p class="name name-grey">Calcium</p>
+                <p class="atomic-weight">40.078</p>
+                <p class="electrons">2-8-8-2</p>
+            </td>
+            <td class="transition-metals">
+                <p class="atomic-number">21</p>
+                <p class="symbol">Sc</p>
+                <p class="name name-grey">Scandium</p>
+                <p class="atomic-weight">44.955908</p>
+                <p class="electrons">2-8-9-2</p>
+            </td>
+            <td class="transition-metals">
+                <p class="atomic-number">22</p>
+                <p class="symbol">Ti</p>
+                <p class="name name-grey">Titanium</p>
+                <p class="atomic-weight">47.867</p>
+                <p class="electrons">2-8-10-2</p>
+            </td>
+            <td class="transition-metals">
+                <p class="atomic-number">23</p>
+                <p class="symbol">V</p>
+                <p class="name name-grey">Vanadium</p>
+                <p class="atomic-weight">50.9415</p>
+                <p class="electrons">2-8-11-2</p>
+            </td>
+            <td class="transition-metals">
+                <p class="atomic-number">24</p>
+                <p class="symbol">Cr</p>
+                <p class="name name-grey">Chromium</p>
+                <p class="atomic-weight">51.9961</p>
+                <p class="electrons">2-8-13-1</p>
+            </td>
+            <td class="transition-metals">
+                <p class="atomic-number">25</p>
+                <p class="symbol">Mn</p>
+                <p class="name name-grey">Manganexe</p>
+                <p class="atomic-weight">54.938044</p>
+                <p class="electrons">2-8-13-2</p>
+            </td>
+            <td class="transition-metals">
+                <p class="atomic-number">26</p>
+                <p class="symbol">Fe</p>
+                <p class="name name-grey">Iron</p>
+                <p class="atomic-weight">55.845</p>
+                <p class="electrons">2-8-14-2</p>
+            </td>
+            <td class="transition-metals">
+                <p class="atomic-number">27</p>
+                <p class="symbol">Co</p>
+                <p class="name name-grey">Cobalt</p>
+                <p class="atomic-weight">58.933</p>
+                <p class="electrons">2-8-15-2</p>
+            </td>
+            <td class="transition-metals">
+                <p class="atomic-number">28</p>
+                <p class="symbol">Ni</p>
+                <p class="name name-grey">Nickel</p>
+                <p class="atomic-weight">58.693</p>
+                <p class="electrons">2-8-16-2</p>
+            </td>
+            <td class="transition-metals">
+                <p class="atomic-number">29</p>
+                <p class="symbol">Cu</p>
+                <p class="name name-grey">Copper</p>
+                <p class="atomic-weight">63.546</p>
+                <p class="electrons">2-8-18-1</p>
+            </td>
+            <td class="post-transition-metals">
+                <p class="atomic-number">30</p>
+                <p class="symbol">Zn</p>
+                <p class="name name-grey">Zinc</p>
+                <p class="atomic-weight">65.38</p>
+                <p class="electrons">2-8-18-2</p>
+            </td>
+            <td class="post-transition-metals">
+                <p class="atomic-number">31</p>
+                <p class="symbol">Ga</p>
+                <p class="name">Gallium</p>
+                <p class="atomic-weight">69.723</p>
+                <p class="electrons">2-8-18-3</p>
+            </td>
+            <td class="metalloids">
+                <p class="atomic-number">14</p>
+                <p class="symbol">Si</p>
+                <p class="name">Silicon</p>
+                <p class="atomic-weight">28.085</p>
+                <p class="electrons">2-8-4</p>
+            </td>
+            <td class="reactive-nonmetals">
+                <p class="atomic-number">15</p>
+                <p class="symbol">P</p>
+                <p class="name">Phosphorus</p>
+                <p class="atomic-weight">30.974</p>
+                <p class="electrons">2-8-5</p>
+            </td>
+            <td class="reactive-nonmetals">
+                <p class="atomic-number">16</p>
+                <p class="symbol">S</p>
+                <p class="name">Sulfur</p>
+                <p class="atomic-weight">32.06</p>
+                <p class="electrons">2-8-6</p>
+            </td>
+            <td class="reactive-nonmetals">
+                <p class="atomic-number">17</p>
+                <p class="symbol">Cl</p>
+                <p class="name name-red">Chlorine</p>
+                <p class="atomic-weight">35.45</p>
+                <p class="electrons">2-8-7</p>
+            </td>
+            <td class="noble-gases">
+                <p class="atomic-number">18</p>
+                <p class="symbol">Ar</p>
+                <p class="name name-red">Argon</p>
+                <p class="atomic-weight">39.948</p>
+                <p class="electrons">2-8-8</p>
+            </td>
+        </tr>       
+    </table>
+</body>
+</html>
