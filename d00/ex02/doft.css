@@ -1,0 +1,21 @@
+body {
+    background-color: #505050;
+}
+.header {
+    margin: auto;
+    margin-top: 20px;
+    width: 75%;
+    height: 150px;
+    border-radius: 9px;
+    background-color: #909090;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 50%;
+    width: 550px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 5px;
+    padding-top: 5px;
+}
