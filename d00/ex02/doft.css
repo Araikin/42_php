@@ -1,21 +1,42 @@
 body {
+    min-width: auto;
     background-color: #505050;
 }
 .header {
+    position: relative;
     margin: auto;
     margin-top: 20px;
     width: 75%;
     height: 150px;
     border-radius: 9px;
     background-color: #909090;
+    box-shadow:10px 10px 10px black;  
 }
 
-img {
-    vertical-align: middle;
+#logo {
+    position: absolute;
+    height: 95%;
     max-width: 50%;
-    width: 550px;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-left: 5px;
-    padding-top: 5px;
+    padding: 5px;
+}
+
+#loupe {
+    display: inline-block;
+    margin-top: 25px;
+    float: right;
+}
+
+#reload, #close {
+    display: inline-block;
+    float: right;
+}
+
+#reload {
+    height: 20px;
+    vertical-align: bottom;
+}
+
+#close {
+    height: 20px;
+    vertical-align: top;
 }
