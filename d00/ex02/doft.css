@@ -1,42 +1,170 @@
 body {
-    min-width: auto;
+    width: 100%;
     background-color: #505050;
 }
-.header {
-    position: relative;
-    margin: auto;
-    margin-top: 20px;
-    width: 75%;
-    height: 150px;
-    border-radius: 9px;
+
+.container {
     background-color: #909090;
-    box-shadow:10px 10px 10px black;  
+    border-radius: 9px;
+    box-shadow:8px 8px 4px black;  
+}
+
+#header {
+    position: relative;
+    width: 75%;
+    margin: auto;
+    height: auto;
+    margin-top: 1%;
+    padding: 1%;
 }
 
 #logo {
-    position: absolute;
-    height: 95%;
-    max-width: 50%;
-    padding: 5px;
+    display: inline-block;
+    width: 26%;
+}
+
+#close-reload {
+    width: 3%;
+    display: inline-block;
+    float: right;
+}
+
+#close-reload img {
+    width: 50%;
+    padding-left: 70%;
 }
 
 #loupe {
-    display: inline-block;
-    margin-top: 25px;
-    float: right;
-}
-
-#reload, #close {
-    display: inline-block;
-    float: right;
-}
-
-#reload {
-    height: 20px;
-    vertical-align: bottom;
+    position: absolute;
+    width: 15%;
+    margin-left: 56%;
 }
 
 #close {
-    height: 20px;
-    vertical-align: top;
+    padding-top: 140%;
+}
+
+#main {
+    text-align: center;
+    position: relative;
+    margin: auto;
+    margin-top: 1%;
+    width: 73%;
+}
+
+#main-left {
+    float: left;
+}
+
+#main-right {
+    float: right;
+}
+
+#main-left, #main-right {
+    padding: 1%;
+    position: relative;
+    margin: auto;
+    width: 8%;
+    height: 46%;
+    text-align: center;
+}
+
+#main-center {
+    text-align: center;
+    display: inline-block;
+    width: 75%;
+    margin: auto;
+}
+#main-center img {
+    padding: 1%;
+    margin: auto;
+    width: 98%;
+    height: auto;
+}
+
+#main-left img, #main-right img {
+    margin: 2%;
+    width: 70%;
+}
+
+#eye {
+    border: 8px solid red;
+    border-radius: 10px;
+}
+
+#brick {
+    display: inline-block;
+    background-image: url("resources/brick.jpg");
+    background-repeat: repeat;
+    width: 99%;
+    height: 15%;
+}
+
+#ikea {
+    position: relative;
+    width: 10%;
+    height: 18%;
+    float: right;
+    margin-top: -25%;
+    margin-right: 56%;
+}
+
+#apple {
+    transform: rotate(8deg);
+    position: relative;
+    width: 19%;
+    height: 14%;
+    float: right;
+    margin-top: -25%;
+    margin-right: 3%;
+}
+#apple-2 {
+    position: relative;
+    width: 7%;
+    height: 6%;
+    float: right;
+    margin-top: -14%;
+    margin-right: 10%;
+}
+
+#response {
+    position: absolute;
+    z-index: 1;
+    border-radius: 9px;
+    box-shadow:8px 8px 4px black;  
+    background-color: #88FF89; 
+    width: 25%;
+    height: 12%;
+    margin-left: 10%;
+    margin-top: -4%;
+}
+
+p {
+    padding-left: 3%;
+    font-size: 0.8vw;
+    font-family: Verdana;
+    margin: 0;
+}
+
+#entrez {
+    font-family: 'Times New Roman';
+    font-size: 1.5vw;
+}
+#bonjour {
+    margin-top: 0;
+    font-style: italic;
+}
+
+#ordinateurs {
+    text-shadow: 8px 6px 5px red;
+}
+
+input {
+    margin-left: 3%;
+    margin-top: 1%;
+    width: 81%;
+}
+
+button {
+    border-radius: 3%;
 }

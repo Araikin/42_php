@@ -4,15 +4,45 @@
     <title>Day of the 42</title>
 </head>
 <body>
-    <div class="header">
+    <div id="header" class="container">
         <img id="logo" src="resources/day_of_the_42.png" alt="day_of_the_42">
-        <a href="http://www.disney.com">
-            <img id="reload" src="resources/reload.png" alt="Start from the beginning" title="Start from the beginning">
-        </a>
-        <a href="http://www.relaischateaux.com">
-            <img id="close" src="resources/close.gif" alt="Disconnect" title="Disconnect">
-        </a>
+        <div id="close-reload">
+            <a href="http://www.disney.com">
+                <img id="reload" src="resources/reload.png" alt="Start from the beginning" title="Start from the beginning">
+            </a>
+            <a href="http://www.relaischateaux.com">
+                <img id="close" src="resources/close.gif" alt="Disconnect" title="Disconnect">
+            </a>
+        </div>
         <img id="loupe" src="resources/loupe.png" alt="loupe">
+    </div>
+    <div id="main">
+        <div id="main-left" class="container">
+            <img src="resources/arrow.png" alt="Advance" title="Advance">
+            <img src="resources/main.png" alt="Take" title="Take">
+            <img id="eye" src="resources/oeil.png" alt="Look" title="Look">
+            <img src="resources/outil.png" alt="Use" title="Use">
+            <img src="resources/chat-icon.png" alt="Speak" title="Speak">
+        </div>
+        <div id="main-center" class="container">
+            <img src="resources/cluster.jpg" alt="Room" title="Room">
+            <a href="http://www.ikea.com" id="ikea"></a>
+            <a href="http://www.apple.com" id="apple"></a>
+            <a href="http://www.apple.com" id="apple-2"></a>
+        </div>
+        <div id="main-right" class="container">
+            <img src="resources/book.png" alt="Don't panic" title="Don't panic">
+            <img src="resources/towel.png" alt="Towel" title="Towel">
+            <div id="brick"></div>
+        </div>
+    </div>
+    <div id="response">
+        <p>Vous <span id="entrez">entrez</span> alors dans une grande piece remplie d'<span id="ordinateurs">ordinateurs</span>...</p>
+        <p id="bonjour">- Bonjour, vous êtes nouveau ici ?</p>
+        <form>
+            <input type="text">
+            <button>Repondre</button>
+        </form>
     </div>
 </body>
 
