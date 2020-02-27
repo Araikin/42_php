@@ -29,6 +29,8 @@ if ($argc == 2)
 
     if (!is_numeric($a) || !is_numeric($b) || $op == '')
         echo "Syntax Error";
+    else if ($b == 0 && ($op == '/' || $op == '%'))
+        echo "Can not divide by zero";
     else if ($op == '+')
         echo $a + $b;
     else if ($op == '-')
