@@ -1,0 +1,17 @@
+<- Vertex ----------------------------------------------------------------------
+
+The Vertext class allows you to put points in space and give them some color.
+It also provides reading and writing assessors for the x, y, z. There are 
+functions to get and set variables. getX, getY, getZ, getW, getColor
+setX($arg), setY($arg), setZ($arg), setW($arg), setColor($arg);
+
+An instance can be provided from x, y and z required variables and 
+new Vertex( array( 'x' => 1.0, 'y' => 0.0, 'z' => 0.0 ) );
+
+optional w and color (instance of class Color);
+new Vertex( array( 'x' => 1.0, 'y' => 0.0, 'z' => 0.0, 'color' => $green ) );
+
+Default values are: 1.0 for 'w' and 
+new Color( array( 'red' => 255, 'green' => 255, 'blue' => 255 ) ) for 'color'.
+
+---------------------------------------------------------------------- Vertex ->

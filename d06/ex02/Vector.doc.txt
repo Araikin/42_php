@@ -1,0 +1,40 @@
+<- Vector ----------------------------------------------------------------------
+
+Class Vector  allows you to do manipulations with 3d vectors.
+
+It receives array of destination and origin coordinates through Vertex instance:
+$kwargs['dest', 'orig' => both are objects of class Vertex]
+
+to get Vector you need to substract orig from dest;
+
+The class provides the following methods :
+
+float magnitude(): 
+returns the float type length of the vector.
+
+Vector normalize():
+returns a normalized version of the vector. If the vector is
+already normalized, returns a fresh copy of the vector.
+
+Vector add(Vector $rhs):
+returns the sum vector of both vectors.
+
+Vector sub(Vector $rhs):
+returns the difference vector of both vectors.
+
+Vector opposite():
+returns the opposite vector.
+
+Vector scalarProduct($k):
+returns the multiplication of the vector with a scalar.
+
+float dotProduct(Vector $rhs):
+returns the scalar multiplication of both vec- tors.
+
+float cos(Vector $rhs):
+returns the angle’sAppendix cosine between both vec- tors.
+
+Vector crossProduct(Vector $rhs):
+returns the cross multiplication of both vectors (right-hand rule)
+
+---------------------------------------------------------------------- Vector ->
