@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculate it!</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <input type="text" id="num1" value="">
+    <select name="op" id="op">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input type="text" id="num2" value="">
+    <input type="submit" value="Try me!" id="calc">
+    <script>
+        setInterval(function () { alert("Please, use me..."); }, 30000);
+        var num1;
+        var num2;
+        var op;
+        var calc;
+        $(document).ready(function() {
+            num1 = $('#num1'); 
+            num2 = $('#num2');
+            op = $('#op');
+            calc = $('#calc');
+            calc.click(calculate);
+        });
+
+        function checkNumbers(num1, num2) {
+            return (num1 == parseInt(num1, 10) && num1 >= 0 && num2 == parseInt(num2, 10) && num2 >= 0);
+        }
+
+        function calculate() {
+            var res;
+            if (checkNumbers(num1.val(), num2.val()))
+                res = do_op(Number(num1.val()), Number(num2.val()), op.val());
+            else
+                res = "Error :(";
+            console.log(res);
+            alert(res);
+        };
+
+        function do_op(num1, num2, op) {
+            switch (op) {
+                case '+':
+                    return (num1 + num2);
+                case '-':
+                    return (num1 - num2);
+                case '*':
+                    return (num1 * num2);
+                case '/':
+                    if (num2 == 0)
+                        return ("It's over 9000!");
+                    return (num1 / num2);
+                case '%':
+                    if (num2 == 0)
+                        return ("It's over 9000!");
+                    return (num1 % num2);
+            }
+        };
+    </script>
+</body>
+
+</html>

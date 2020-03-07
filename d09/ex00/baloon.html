@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Baloon</title>
-    </head>
-    <body>
-        <div id="circle" onmouseout="shrink();" onclick="increase();" style="
+<head>
+    <title>Baloon</title>
+</head>
+<body>
+    <div id="circle" onmouseout="shrink();" onclick="increase();" style="
             margin:auto; 
             width: 200px; 
             height: 200px; 
             border-radius: 50%; 
             background-color: red;">
-            <script>
-                function shrink() {
-                    var cir = document.getElementById('circle');
-                    var d = parseInt(cir.style.height) - 5;
-                    if (d > 200)
-                        cir.style.height = cir.style.width = d + "px";
-                    update_color(-1);
-                };
+        <script>
+            function shrink() {
+                var cir = document.getElementById('circle');
+                var d = parseInt(cir.style.height) - 5;
+                if (d > 200)
+                    cir.style.height = cir.style.width = d + "px";
+                update_color(-1);
+            };
 
-                function increase() {
-                    var cir = document.getElementById('circle');
-                    var d = parseInt(cir.style.height) + 10;
-                    console.log(d);
-                    if (d <= 420)
-                        cir.style.height = cir.style.width = d + "px";
-                    else
-                        cir.style.height = cir.style.width = "200px";
-                    update_color(1);
-                };
+            function increase() {
+                var cir = document.getElementById('circle');
+                var d = parseInt(cir.style.height) + 10;
+                // console.log(d);
+                if (d <= 420)
+                    cir.style.height = cir.style.width = d + "px";
+                else
+                    cir.style.height = cir.style.width = "200px";
+                update_color(1);
+            };
 
-                function update_color(order) {
-                    var cir = document.getElementById('circle');
-                    var color = cir.style.backgroundColor;
-                    if (color == 'red')
-                        cir.style.backgroundColor = (order == 1) ? 'green' : 'blue';
-                    else if (color == 'green')
-                        cir.style.backgroundColor = (order == 1) ? 'blue' : 'red';
-                    else
-                        cir.style.backgroundColor = (order == 1) ? 'red' : 'green';
-                };
-            </script>
-        </div>
-    </body>
+            function update_color(order) {
+                var cir = document.getElementById('circle');
+                var color = cir.style.backgroundColor;
+                if (color == 'red')
+                    cir.style.backgroundColor = (order == 1) ? 'green' : 'blue';
+                else if (color == 'green')
+                    cir.style.backgroundColor = (order == 1) ? 'blue' : 'red';
+                else
+                    cir.style.backgroundColor = (order == 1) ? 'red' : 'green';
+            };
+        </script>
+    </div>
+</body>
 </html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Baloon</title>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <style>
+            .circle {
+                margin:auto; 
+                width: 200px; 
+                height: 200px; 
+                border-radius: 50%; 
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="circle">
+           <script>
+                var rgb = {0: 'red', 1: 'green', 2: 'blue'};
+                var colorIndex = 0;
+                var baloon;
+                var size = 200;
+                $(document).ready(function() {
+                    baloon = $('.circle'); 
+                    baloon.click(increase);
+                    baloon.mouseleave(shrink);
+                });
+                function shrink() {
+                    size -= 5;
+                    if (size < 200)
+                        size = 200;
+                    colorIndex--;
+                    if (colorIndex < 0)
+                        colorIndex = 2;
+                    update(colorIndex);
+                };
+
+                function increase() {
+                    size += 10;
+                    if (size > 420)
+                        size = 200;
+                    colorIndex++;
+                    if (colorIndex > 2)
+                        colorIndex = 0;
+                    update(colorIndex);
+                };
+
+                function update(colorIndex) {
+                    baloon.css('height', size);
+                    baloon.css('width', size);
+                    baloon.css('backgroundColor', rgb[colorIndex]);
+                };
+            </script>
+        </div>
+    </body>
+</html>
