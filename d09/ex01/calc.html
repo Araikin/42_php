@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculate it!</title>
+    </head>
+    <body>
+        <input type="text" id="number1" value="">
+        <select name="op" id="op">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input type="text" id="number2" value="">
+        <input type="submit" value="Try me!" onclick="calculate();">
+        <script>
+            setInterval( function() { alert("Please, use me..."); }, 30000);
+            function calculate() {
+                var num1 = document.getElementById('number1');
+                var num2 = document.getElementById('number2');
+                var op = document.getElementById('op').value;
+                num1 = parseInt(num1.value);
+                num2 = parseInt(num2.value);
+                var res;
+                if (num1 >= 0 && num2 >= 0)
+                    res = do_op(num1, num2, op);
+                else
+                    res = "Error :(";
+                console.log(res);
+                alert(res);
+            }; 
+
+            function do_op(num1, num2, op) {
+                switch(op) {
+                    case '+':
+                        return (num1 + num2);
+                    case '-':
+                        return (num1 - num2);
+                    case '*':
+                        return (num1 * num2);
+                    case '/':
+                        if (num2 == 0)
+                            return ("It's over 9000!");
+                        return (num1 / num2);
+                    case '%':
+                        if (num2 == 0)
+                            return ("It's over 9000!");
+                        return (num1 % num2);
+                }
+            };
+        </script>
+    </body>
+</html>
